@@ -1,0 +1,85 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px 40px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+.input {
+  width: calc(50% - 10px);
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.input:last-of-type {
+  margin-right: 0;
+}
+
+#resultText {
+  font-size: 18px;
+  font-weight: 400;
+  color: #27ae60;
+  margin-top: 20px;
+}
+
+#finalMessage {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #e74c3c;
+}
+
+@media (max-width: 600px) {
+  .input {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

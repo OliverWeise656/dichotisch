@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dichotischer Hörtest</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Dichotischer Hörtest</h1>
+    <p>Dies ist der letzte Hörtest.<p>
+    <p>Für diesen Test benötigen Sie Kopfhörer. Bitte setzen Sie diese auf.</p>
+    <p>Sie werden gleichzeitig auf beiden Ohren verschiedene, aber bekannte Wörter hören.</p>
+    <p>Merken Sie sich beide und tragen Sie sie <i>ohne Artikel</i> in die dafür vorgesehenen Felder ein. Es ist dabei unerheblich in welches Feld Sie die Wörter eintragen. Sollten Sie ein Wort nicht verstanden haben, so lassen Sie das Feld einfach frei.</p>
+
+    <p>Lassen Sie die Kinder Ihnen beide Wörter zum Eintragen vorsprechen.</p>
+    <p>Drücken Sie 'Start', um den Test zu beginnen.</p>
+    <button id="startButton" class="btn">Start</button>
+    <div id="testSection" style="display:none;">
+      <p>Geben Sie die beiden gehörten Wörter an:</p>
+      <input type="text" id="word1" placeholder="Wort 1" class="input">
+      <input type="text" id="word2" placeholder="Wort 2" class="input">
+      <button id="submitButton" class="btn">Weiter</button>
+    </div>
+    <div id="resultSection" style="display:none;">
+      <p id="resultText"></p>
+      <p id="finalMessage" style="display:none;"></p>
+        
+        <b>Vielen Dank für Ihre freundliche Unterstützung!<p>
+
+Auf Ihrem Desktop finden Sie folgende PDF-Dokumente:<p>
+        "Anamnese und Testergebnisse.pdf",<p>
+        "Mottier-Test.pdf"<p>
+        "Diskrimination.pdf"<p>
+        und "Dichotisch.pdf".<p>
+        <span style="color: red;">Bitte bringen Sie diese ausgedruckt zu Ihrem Besuch bei uns mit!</span><p>
+      
+        Auf diese Weise tragen Sie zu einem reibungslosen Ablauf Ihres Besuchs bei.<br>
+        Herzlichen Dank!</b>
+      </p>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
